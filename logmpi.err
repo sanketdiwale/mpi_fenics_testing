@@ -1,0 +1,17 @@
+slurmstepd: error: Step 35341199.0 exceeded memory limit (2134288 > 1024000), being killed
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: Exceeded job memory limit
+slurmstepd: error: *** STEP 35341199.0 ON node348 CANCELLED AT 2021-04-03T10:48:51 ***
+[mpiexec@node348] control_cb (pm/pmiserv/pmiserv_cb.c:206): assert (!closed) failed
+[mpiexec@node348] HYDT_dmxu_poll_wait_for_event (tools/demux/demux_poll.c:76): callback returned error status
+[mpiexec@node348] HYD_pmci_wait_for_completion (pm/pmiserv/pmiserv_pmci.c:160): error waiting for event
+[mpiexec@node348] main (ui/mpich/mpiexec.c:326): process manager error waiting for completion
+ 	Full Command: mpirun -n 100 python demo_auto-adaptive_poisson.py 
+	Memory (kb): 1360 
+	# SWAP (freq): 0 
+	# Waits (freq): 32 
+	CPU (percent): 0% 
+	Time (seconds): 32.64 
+	Time (hh:mm:ss.ms): 0:32.64 
+	System CPU Time (seconds): 0.00 
+	User CPU Time (seconds): 0.00 

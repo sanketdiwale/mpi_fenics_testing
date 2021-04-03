@@ -1,15 +1,15 @@
 #!/bin/bash
-#SBATCH --array=1-0%1000
+#SBATCH --array=0-0%1000
 #SBATCH --time=10:00:00
 #SBATCH -p sched_mit_rutledge
-#SBATCH -e log.err
-#SBATCH -o log.run
+#SBATCH -e logmpi.err
+#SBATCH -o logmpi.run
 #SBATCH --workdir=./
 #SBATCH --cpus-per-task=1
 
 TIME='/usr/bin/env time -f " \\tFull Command:                      %C \\n\\tMemory (kb):                       %M \\n\\t# SWAP  (freq):                    %W \\n\\t# Waits (freq):                    %w \\n\\tCPU (percent):                     %P \\n\\tTime (seconds):                    %e \\n\\tTime (hh:mm:ss.ms):                %E \\n\\tSystem CPU Time (seconds):         %S \\n\\tUser   CPU Time (seconds):         %U " '
 
-CMD='mpirun -n 100 python demo_auto-adaptive_poisson'
+CMD='mpirun -n 100 python demo_auto-adaptive_poisson.py'
 # Write details to stdout
 echo "  Job: $SLURM_ARRAY_JOB_ID"
 echo

@@ -1,0 +1,114 @@
+  Job: 35340792
+
+  Started on:            node348
+  Started at:            Sat Apr 3 10:43:10 EDT 2021
+python demo_auto-adaptive_poisson.py
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Generating forms required for error control, this may take some time...
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Calling FFC just-in-time (JIT) compiler, this may take some time.
+Solving variational problem adaptively
+Adaptive iteration 0
+  Solving linear variational problem.
+  Value of goal functional is 0.121629.
+  Solving linear variational problem.
+  Interpolate from parent to child
+  Interpolate from parent to child
+Adaptive iteration 1
+  Solving linear variational problem.
+  Value of goal functional is 0.126801.
+  Solving linear variational problem.
+  Interpolate from parent to child
+  Interpolate from parent to child
+Adaptive iteration 2
+  Solving linear variational problem.
+  Value of goal functional is 0.124812.
+  Solving linear variational problem.
+  Interpolate from parent to child
+  Interpolate from parent to child
+Adaptive iteration 3
+  Solving linear variational problem.
+  Value of goal functional is 0.124488.
+  Solving linear variational problem.
+  Interpolate from parent to child
+  Interpolate from parent to child
+Adaptive iteration 4
+  Solving linear variational problem.
+  Value of goal functional is 0.125291.
+  Solving linear variational problem.
+  Interpolate from parent to child
+  Interpolate from parent to child
+Adaptive iteration 5
+  Solving linear variational problem.
+  Value of goal functional is 0.12497.
+  Solving linear variational problem.
+  Interpolate from parent to child
+  Interpolate from parent to child
+Adaptive iteration 6
+  Solving linear variational problem.
+  Value of goal functional is 0.12524.
+  Solving linear variational problem.
+  Interpolate from parent to child
+  Interpolate from parent to child
+Adaptive iteration 7
+  Solving linear variational problem.
+  Value of goal functional is 0.125153.
+  Solving linear variational problem.
+  Interpolate from parent to child
+  Interpolate from parent to child
+Adaptive iteration 8
+  Solving linear variational problem.
+  Value of goal functional is 0.125229.
+  Solving linear variational problem.
+Error estimate (8.81699e-06) is less than tolerance (1e-05), returning.
+
+Parameters used for adaptive solve:
+
+<Parameter set "adaptive_solver" containing 9 parameter(s) and parameter set(s)>
+
+Summary of adaptive data:
+
+  Level  |  functional_value  error_estimate  tolerance  num_cells  num_dofs
+  --------------------------------------------------------------------------
+  0      |          0.121629        0.001179   0.000010        128        81
+  1      |          0.126801        0.000624   0.000010        268       158
+  2      |          0.124812        0.000336   0.000010        493       273
+  3      |          0.124488        0.000219   0.000010       1051       566
+  4      |          0.125291        0.000084   0.000010       1839       969
+  5      |          0.124970        0.000073   0.000010       3695      1917
+  6      |          0.125240        0.000026   0.000010       6552      3366
+  7      |          0.125153        0.000020   0.000010      11869      6057
+  8      |          0.125229        0.000009   0.000010      22424     11387
+
+Time spent for adaptive solve (in seconds):
+
+  Level  |  solve_primal  estimate_error  compute_indicators  mark_mesh  adapt_mesh    update
+  -------------------------------------------------------------------------------------------
+  0      |      0.489216        0.010741            0.005970   0.000057    0.001323  0.006951
+  1      |      0.002709        0.019512            0.008719   0.000072    0.001552  0.008571
+  2      |      0.003369        0.027565            0.011954   0.000100    0.002596  0.012609
+  3      |      0.005500        0.045956            0.021354   0.000187    0.003610  0.019472
+  4      |      0.011522        0.079332            0.037428   0.000336    0.007281  0.037756
+  5      |      0.028221        0.159736            0.074373   0.000718    0.012077  0.067137
+  6      |      0.063405        0.223747            0.104067   0.001079    0.017300  0.097655
+  7      |      0.146439        0.409439            0.188750   0.002231    0.034184  0.181049
+  8      |      0.477225        0.782576                   0          0           0         0
+
+  Finished at:            Sat Apr 3 10:44:55 EDT 2021
+

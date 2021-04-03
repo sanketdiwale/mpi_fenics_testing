@@ -1,0 +1,7 @@
+  Job: 35341199
+
+  Started on:            node348
+  Started at:            Sat Apr 3 10:48:19 EDT 2021
+mpirun -n 100 python demo_auto-adaptive_poisson.py
+  Finished at:            Sat Apr 3 10:48:51 EDT 2021
+
